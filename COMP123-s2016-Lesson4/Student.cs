@@ -21,6 +21,7 @@ namespace COMP123_s2016_Lesson4
         // PRIVATE INSTANCE VARIABLES ===================================================================
 
         private string _studentID;
+        private List<Course> _courses = new List<Course>();
 
         // PUBLIC PROPERTIES ===================================================================
 
@@ -42,6 +43,24 @@ namespace COMP123_s2016_Lesson4
                 }
             }
 
+        /**<summary>
+        * 
+        * </summary>
+        *
+        * @property
+        */
+        public List<Course> Courses
+            {
+            get
+                {
+                return this._courses;
+                }
+            set
+                {
+                this._courses = value;
+                }
+            }
+
         // CONSTRUCTORS ===================================================================
 
         /**<summary>
@@ -57,6 +76,7 @@ namespace COMP123_s2016_Lesson4
             : base(name, age)
             {
             this.StudentID = studentID;
+
             }
 
         // PRIVATE METHODS ==================================================================
