@@ -95,5 +95,25 @@ namespace COMP123_s2016_Lesson4
             Console.WriteLine(this.Name + " studies");
             }
 
+        /**
+         * <summary>
+         * This method lists all the courses the student is currently enrollled in.
+         * </summary>
+         * 
+         * @method ShowCourses
+         * @returns {void}
+         */
+        public void ShowCourses()
+            {
+            Console.WriteLine();
+            Console.WriteLine("Course List");
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
+            foreach (Course course in this.Courses)
+                {
+                Console.WriteLine("+ " + course.Code + " " + course.Description);
+                }
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine();
+            }
         }
     }
